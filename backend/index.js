@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Middleware for handling CORS POLICY
 // Option 1:Allow All Origins with Default of cors(*)
-app.use(cors);
+app.use(cors());
 // option2 allow custom origin
 // app.use(
 //   cors({
@@ -34,7 +34,7 @@ mongoose
   .then(() => {
     console.log("App connected to database successfully ");
     app.listen(PORT, () => {
-      console.log("App is listening to port: " + PORT);
+      console.log("App is listening to port: http://localhost:" + PORT);
     });
   })
   .catch((error) => {
