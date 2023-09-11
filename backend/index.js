@@ -33,7 +33,7 @@ mongoose
   .connect(mongoDBURL)
   .then(() => {
     console.log("App connected to database successfully ");
-    app.listen(https://book-store-mern-stack.vercel.app, () => {
+    app.listen(PORT, () => {
       console.log("App is listening to port: http://localhost:" + PORT);
     });
   })
